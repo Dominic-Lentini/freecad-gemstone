@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 """Run under FreeCADCmd with the addon installed in the user Mod directory.
 
-Verifies that `import freecad.lapidary` works, that the workbench metadata
+Verifies that `import freecad.gemstone` works, that the workbench metadata
 (package.xml) loads through FreeCAD's own Metadata parser, and that the GUI
 entry point at least byte-compiles. FreeCADCmd does not reliably propagate a
 nonzero exit status from script exceptions, so this script reports via
@@ -19,11 +19,11 @@ def main():
     print("FreeCAD version:", ".".join(App.Version()[0:3]))
 
     # 1. The namespace package imports headless.
-    import freecad.lapidary
-    from freecad.lapidary import version
-    from freecad.lapidary.core import gemmath
+    import freecad.gemstone
+    from freecad.gemstone import version
+    from freecad.gemstone.core import gemmath
 
-    print("freecad.lapidary", version.__version__, "from", freecad.lapidary.__file__)
+    print("freecad.gemstone", version.__version__, "from", freecad.gemstone.__file__)
 
     # 2. gemmath sanity under FreeCAD's Python.
     n = gemmath.facet_normal(0.0, 96, 0, gemmath.Side.CROWN)
@@ -31,7 +31,7 @@ def main():
 
     # 3. Workbench metadata loads through FreeCAD's package.xml parser.
     addon_dir = os.path.dirname(os.path.dirname(os.path.dirname(
-        os.path.abspath(freecad.lapidary.__file__))))
+        os.path.abspath(freecad.gemstone.__file__))))
     package_xml = os.path.join(addon_dir, "package.xml")
     assert os.path.isfile(package_xml), "package.xml not found at " + package_xml
     md = App.Metadata(package_xml)
@@ -48,10 +48,10 @@ def main():
     assert os.path.isfile(icon), "workbench icon missing: " + icon
 
     # 5. init_gui.py needs FreeCADGui to import, but it must at least compile.
-    init_gui = os.path.join(addon_dir, "freecad", "lapidary", "init_gui.py")
+    init_gui = os.path.join(addon_dir, "freecad", "gemstone", "init_gui.py")
     py_compile.compile(init_gui, doraise=True)
 
-    print("LAPIDARY_VERIFY_OK")
+    print("GEMSTONE_VERIFY_OK")
 
 
 try:
