@@ -50,7 +50,7 @@ The same panel at a depth that misses the stone — the facet plane itself is dr
 
 ![auto select](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/auto-select.png)
 
-**New Gem** taking an arbitrary imported solid as custom rough instead of one of the six stock habits.
+**New Gem**
 
 ![custom rough](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/custom-rough.png)
 
