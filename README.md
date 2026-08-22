@@ -36,31 +36,31 @@ diagram, and ray-trace the finished design:
 
 The live faceting diagram dock beside the 3D view, its facets tinted by light return.
 
-![diagram dock](https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/docs/images/diagram-dock.png)
+![diagram dock](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/diagram-dock.png)
 
 **Facet Tier** mid-edit: the index wheel with 8-fold symmetry active, the pending cut previewed as bright kerf outlines where the planes cross the stone.
 
-![facet tier panel](https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/docs/images/facet-tier-panel.png)
+![facet tier panel](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/facet-tier-panel.png)
 
 The same panel at a depth that misses the stone — the facet plane itself is drawn instead of a kerf.
 
-![facet tier plane](https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/docs/images/facet-tier-plane.png)
+![facet tier plane](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/facet-tier-plane.png)
 
 **Auto** armed and waiting: the vertex, edge or face you pick aims the cut.
 
-![auto select](https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/docs/images/auto-select.png)
+![auto select](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/auto-select.png)
 
 **New Gem** taking an arbitrary imported solid as custom rough instead of one of the six stock habits.
 
-![custom rough](https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/docs/images/custom-rough.png)
+![custom rough](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/custom-rough.png)
 
 The **Optics Results** dock after a three-wavelength run: brightness, window/leak and fire-spread maps with the per-tier table.
 
-![optics results](https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/docs/images/optics-results.png)
+![optics results](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/optics-results.png)
 
 **Trace Ray** — one picked ray fanned into its wavelength-coloured branch tree inside the stone.
 
-![trace ray](https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/docs/images/trace-ray.png)
+![trace ray](https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/docs/images/trace-ray.png)
 
 
 ## Requirements
