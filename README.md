@@ -1,5 +1,13 @@
 # Lapidary — a faceting workbench for FreeCAD
 
+
+> **A note on names.** This repository is `freecad-gemstone`; the workbench
+> itself is **Lapidary**. That is deliberate — the Python package is
+> `freecad.lapidary`, the workbench class is `LapidaryWorkbench`, and every
+> command is `Lapidary_*`. Those are the names FreeCAD loads and the names
+> the Addon Manager displays. If you are editing CI or tooling, match the
+> package name (`lapidary`), not the repository name.
+
 Lapidary is a FreeCAD workbench for designing faceted gemstones with
 GemCad-comparable capability: parametric facet tiers driven by index gear,
 angle and index list; live 3D preview; dop transfer between pavilion and
