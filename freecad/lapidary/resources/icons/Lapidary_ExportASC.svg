@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_ExportASC: the gem
+     with an arrow running out to an .ASC design file. Mirror of the import
+     icon, so the pair reads as a pair. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- the gem -->
+  <g stroke="#1a5276" stroke-width="2.2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="2,34 8,25 22,25 28,34 15,57"/>
+    <polyline points="2,34 28,34" fill="none"/>
+    <polyline points="8,25 11,34 15,57 19,34 22,25" fill="none"/>
+  </g>
+  <!-- the file -->
+  <g stroke="#566573" stroke-width="2.2" stroke-linejoin="round" fill="#f4f6f7">
+    <polygon points="35,6 52,6 59,13 59,42 35,42"/>
+    <polyline points="52,6 52,13 59,13" fill="none"/>
+  </g>
+  <g stroke="#85929e" stroke-width="1.8" stroke-linecap="round">
+    <line x1="40" y1="21" x2="54" y2="21"/>
+    <line x1="40" y1="27" x2="54" y2="27"/>
+    <line x1="40" y1="33" x2="49" y2="33"/>
+  </g>
+  <!-- out to the file -->
+  <g stroke="#b9770e" stroke-width="3" stroke-linecap="round" fill="none">
+    <line x1="28" y1="52" x2="44" y2="52"/>
+  </g>
+  <polygon points="52,52 42,46.5 42,57.5" fill="#b9770e"/>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_ImportASC: an .ASC
+     design file with an arrow running into the gem. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- the file -->
+  <g stroke="#566573" stroke-width="2.2" stroke-linejoin="round" fill="#f4f6f7">
+    <polygon points="5,6 22,6 29,13 29,42 5,42"/>
+    <polyline points="22,6 22,13 29,13" fill="none"/>
+  </g>
+  <g stroke="#85929e" stroke-width="1.8" stroke-linecap="round">
+    <line x1="10" y1="21" x2="24" y2="21"/>
+    <line x1="10" y1="27" x2="24" y2="27"/>
+    <line x1="10" y1="33" x2="19" y2="33"/>
+  </g>
+  <!-- the gem -->
+  <g stroke="#1a5276" stroke-width="2.2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="36,34 42,25 56,25 62,34 49,57"/>
+    <polyline points="36,34 62,34" fill="none"/>
+    <polyline points="42,25 45,34 49,57 53,34 56,25" fill="none"/>
+  </g>
+  <!-- into the gem -->
+  <g stroke="#1e8449" stroke-width="3" stroke-linecap="round" fill="none">
+    <line x1="20" y1="52" x2="36" y2="52"/>
+  </g>
+  <polygon points="44,52 34,46.5 34,57.5" fill="#1e8449"/>
+</svg>

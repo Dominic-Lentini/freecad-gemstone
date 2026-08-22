@@ -1,0 +1,34 @@
+[build-system]
+# PEP 639 (license as an SPDX string, license-files) needs 77+.
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freecad.lapidary"
+description = "FreeCAD workbench for designing faceted gemstones"
+readme = "README.md"
+license = "LGPL-2.1-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Dominic", email = "djlentini96@gmail.com" }]
+requires-python = ">=3.10"
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Manufacturing",
+    "Topic :: Scientific/Engineering",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "freecad.lapidary.version.__version__" }
+
+[tool.setuptools.packages.find]
+# freecad/ is a namespace-package portion shared with FreeCAD itself: it must
+# contain no __init__.py of its own.
+include = ["freecad.lapidary*"]
+
+[tool.setuptools.package-data]
+"freecad.lapidary" = ["resources/icons/*.svg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

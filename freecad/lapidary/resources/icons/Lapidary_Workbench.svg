@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary workbench: a round
+     brilliant in profile, table up and culet down, with its crown and
+     pavilion facet edges. Deliberately the simplest silhouette of the set so
+     it still reads at 16 px in the workbench selector. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#1a5276" stroke-width="2.6" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="6,24 19,8 45,8 58,24 32,58"/>
+  </g>
+  <g stroke="#1a5276" stroke-width="1.9" stroke-linejoin="round" fill="none">
+    <!-- girdle -->
+    <line x1="6" y1="24" x2="58" y2="24"/>
+    <!-- crown: bezels down to the girdle, table across the top -->
+    <polyline points="19,8 24,24"/>
+    <polyline points="45,8 40,24"/>
+    <polyline points="24,24 32,8 40,24"/>
+    <!-- pavilion mains meeting at the culet -->
+    <polyline points="19,24 32,58 45,24"/>
+  </g>
+</svg>

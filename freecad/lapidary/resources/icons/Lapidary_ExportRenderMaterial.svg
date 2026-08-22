@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_ExportRenderMaterial:
+     a material card (page with a color swatch and constant lines) leaving via
+     an export arrow toward a render sphere. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- the material card -->
+  <g stroke="#1a5276" stroke-width="2" fill="#fdfefe">
+    <rect x="6" y="6" width="30" height="40" rx="2"/>
+  </g>
+  <rect x="10" y="10" width="10" height="10" fill="#aed6f1" stroke="#1a5276"
+        stroke-width="1.5"/>
+  <g stroke="#7f8c8d" stroke-width="2" stroke-linecap="round">
+    <line x1="24" y1="13" x2="32" y2="13"/>
+    <line x1="24" y1="18" x2="32" y2="18"/>
+    <line x1="10" y1="26" x2="32" y2="26"/>
+    <line x1="10" y1="32" x2="28" y2="32"/>
+    <line x1="10" y1="38" x2="32" y2="38"/>
+  </g>
+  <!-- export arrow -->
+  <g stroke="#196f3d" stroke-width="3" stroke-linecap="round" fill="none">
+    <line x1="36" y1="40" x2="48" y2="46"/>
+  </g>
+  <polygon points="52,48 44,48 47,41" fill="#196f3d" stroke="none"/>
+  <!-- render sphere -->
+  <circle cx="50" cy="20" r="11" fill="#a9dfbf" stroke="#196f3d"
+          stroke-width="2"/>
+  <path d="M 44 15 A 8 8 0 0 1 50 12" fill="none" stroke="#fdfefe"
+        stroke-width="2.4" stroke-linecap="round"/>
+</svg>

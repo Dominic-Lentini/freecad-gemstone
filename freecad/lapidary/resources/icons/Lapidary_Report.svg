@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_Report: the stone in
+     profile carrying the dimension lines the report measures (width across,
+     depth down). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#1a5276" stroke-width="2.2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="12,24 20,12 40,12 48,24 30,52"/>
+    <polyline points="12,24 48,24" fill="none"/>
+    <polyline points="20,12 24,24 30,52 36,24 40,12" fill="none"/>
+  </g>
+  <!-- width dimension, above the stone -->
+  <g stroke="#b9770e" stroke-width="1.8" stroke-linecap="round">
+    <line x1="12" y1="6" x2="48" y2="6"/>
+    <line x1="12" y1="3" x2="12" y2="9"/>
+    <line x1="48" y1="3" x2="48" y2="9"/>
+  </g>
+  <!-- depth dimension, down the right -->
+  <g stroke="#b9770e" stroke-width="1.8" stroke-linecap="round">
+    <line x1="57" y1="12" x2="57" y2="52"/>
+    <line x1="54" y1="12" x2="60" y2="12"/>
+    <line x1="54" y1="52" x2="60" y2="52"/>
+  </g>
+</svg>

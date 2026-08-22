@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — facet tier with warning overlay -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#1a5276" stroke-width="2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="16,20 24,11 40,11 48,20 32,44"/>
+    <polyline points="16,20 48,20" fill="none"/>
+    <polyline points="24,11 28,20 32,44 36,20 40,11" fill="none"/>
+  </g>
+  <g stroke="#7d5a00" stroke-width="2" stroke-linejoin="round" fill="#f5b731">
+    <polygon points="46,38 62,62 30,62"/>
+  </g>
+  <text x="46" y="59" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="bold" fill="#5a4000">!</text>
+</svg>

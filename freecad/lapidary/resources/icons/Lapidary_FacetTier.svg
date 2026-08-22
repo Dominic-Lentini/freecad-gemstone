@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_FacetTier: a gem in
+     profile with one tier of facets highlighted, and the index marks the tier
+     is cut at. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#1a5276" stroke-width="2.2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="8,26 18,12 46,12 56,26 32,58"/>
+    <polyline points="8,26 56,26" fill="none"/>
+  </g>
+  <!-- the tier being cut -->
+  <g stroke="#b9770e" stroke-width="2.4" stroke-linejoin="round" fill="#f5cba7">
+    <polygon points="8,26 20,26 32,58"/>
+    <polygon points="32,26 44,26 32,58" fill="#fae5d3"/>
+  </g>
+  <g stroke="#1a5276" stroke-width="1.6" fill="none">
+    <polyline points="18,12 22,26"/>
+    <polyline points="46,12 42,26"/>
+    <polyline points="20,26 32,58 44,26"/>
+  </g>
+  <!-- index marks across the girdle line -->
+  <g stroke="#566573" stroke-width="1.6" stroke-linecap="round">
+    <line x1="14" y1="22" x2="14" y2="26"/>
+    <line x1="26" y1="22" x2="26" y2="26"/>
+    <line x1="38" y1="22" x2="38" y2="26"/>
+    <line x1="50" y1="22" x2="50" y2="26"/>
+  </g>
+</svg>

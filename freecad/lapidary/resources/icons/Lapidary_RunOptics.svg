@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_RunOptics: the
+     stone under the lighting dome with a play triangle: execute the study. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- lighting dome -->
+  <path d="M 6 30 A 26 26 0 0 1 58 30" fill="none" stroke="#b9770e"
+        stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/>
+  <g stroke="#1a5276" stroke-width="2.2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="14,34 20,25 44,25 50,34 32,52"/>
+    <polyline points="14,34 50,34" fill="none"/>
+  </g>
+  <!-- run -->
+  <g stroke="#196f3d" stroke-width="2" stroke-linejoin="round" fill="#a9dfbf">
+    <polygon points="44,42 60,52 44,62"/>
+  </g>
+</svg>

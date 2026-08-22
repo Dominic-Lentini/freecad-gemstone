@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.FCStd1
+*.FCBak
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+pytest_exit.txt
+# Local calibration material for the Phase 2 .ASC parser: third-party sample
+# designs and a reference implementation, kept out of the repo for licensing
+# reasons (see reference/README.md). Tests that need it skip when absent.
+reference/
+.pixi/
+.vscode/
+Thumbs.db

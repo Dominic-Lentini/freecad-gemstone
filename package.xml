@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+  <name>Lapidary</name>
+  <description>Design faceted gemstones: parametric facet tiers driven by index gear, angle and index list. GemCad .ASC interchange, printable 2D faceting diagrams, cutting sheets, and ray-traced optics studies.</description>
+  <version>0.2.0</version>
+  <date>2026-08-21</date>
+  <maintainer email="djlentini96@gmail.com">Dominic</maintainer>
+  <author email="djlentini96@gmail.com">Dominic</author>
+  <license file="LICENSE">LGPL-2.1-or-later</license>
+
+  <!-- 1.1 is the first FreeCAD with PySide6, which the task panels and the
+       diagram dock are written against. Declared at package level because
+       that is what the Addon Manager filters installs on, and repeated on the
+       workbench content item below. -->
+  <freecadmin>1.1.0</freecadmin>
+  <pythonmin>3.10</pythonmin>
+
+  <!-- The optics tracer is vectorized numpy. FreeCAD bundles numpy, so this
+       resolves as already-satisfied on any normal install; declared so the
+       Addon Manager reports it rather than infers it. -->
+  <depend type="python">numpy</depend>
+
+  <url type="repository" branch="main">https://github.com/Dominic-Lentini/freecad-lapidary</url>
+  <url type="bugtracker">https://github.com/Dominic-Lentini/freecad-lapidary/issues</url>
+  <!-- readme must be a raw Markdown link: the Addon Manager renders it. -->
+  <url type="readme">https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/README.md</url>
+  <url type="documentation">https://github.com/Dominic-Lentini/freecad-lapidary/blob/main/README.md</url>
+  <icon>freecad/lapidary/resources/icons/Lapidary_Workbench.svg</icon>
+
+  <content>
+    <workbench>
+      <classname>LapidaryWorkbench</classname>
+      <subdirectory>./</subdirectory>
+      <freecadmin>1.1.0</freecadmin>
+      <tag>faceting</tag>
+      <tag>gemstone</tag>
+      <tag>lapidary</tag>
+      <tag>gemcad</tag>
+      <tag>jewelry</tag>
+      <tag>diagram</tag>
+      <tag>optics</tag>
+    </workbench>
+  </content>
+</package>

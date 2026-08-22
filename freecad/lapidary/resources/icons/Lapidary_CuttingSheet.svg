@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_CuttingSheet: the
+     printed instruction table, one row per tier, with the gem badge. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#566573" stroke-width="2.4" stroke-linejoin="round" fill="#f4f6f7">
+    <rect x="6" y="4" width="44" height="56" rx="2"/>
+  </g>
+  <!-- header rule -->
+  <line x1="12" y1="15" x2="44" y2="15" stroke="#2c3e50" stroke-width="2.4"
+        stroke-linecap="round"/>
+  <!-- the tier rows: name, angle, index list -->
+  <g stroke="#85929e" stroke-width="2" stroke-linecap="round">
+    <line x1="12" y1="23" x2="17" y2="23"/>
+    <line x1="22" y1="23" x2="44" y2="23"/>
+    <line x1="12" y1="31" x2="17" y2="31"/>
+    <line x1="22" y1="31" x2="44" y2="31"/>
+    <line x1="12" y1="39" x2="17" y2="39"/>
+    <line x1="22" y1="39" x2="38" y2="39"/>
+    <line x1="12" y1="47" x2="17" y2="47"/>
+    <line x1="22" y1="47" x2="44" y2="47"/>
+  </g>
+  <!-- gem badge -->
+  <g stroke="#1a5276" stroke-width="2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="42,44 47,37 57,37 62,44 52,60"/>
+    <polyline points="42,44 62,44" fill="none"/>
+    <polyline points="47,37 49,44 52,60 55,44 57,37" fill="none"/>
+  </g>
+</svg>

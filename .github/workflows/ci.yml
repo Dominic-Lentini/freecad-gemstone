@@ -1,0 +1,82 @@
+name: CI
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  pure-python-tests:
+    name: Pure-Python tests (plain pytest)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pytest and numpy
+        # numpy is the optics engine's one dependency (always bundled with
+        # FreeCAD): the whole tracer, its physics fixtures and the
+        # scalar-reference agreement suite run here on plain CPython.
+        run: python -m pip install pytest numpy
+
+      - name: Run tests
+        run: python -m pytest -v
+
+  freecad-headless:
+    # 1.1.x is the development target and the version
+    # the GUI needs, since it is the first with PySide6. 1.0.x is kept in the
+    # matrix because the headless half — core, asc_io and the diagram's
+    # projection and SVG layers — must keep working there; nothing in this
+    # job imports Qt.
+    name: FreeCAD ${{ matrix.freecad }} headless install check
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        freecad: ["1.1.*", "1.0.*"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install FreeCAD ${{ matrix.freecad }} from conda-forge
+        uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-name: freecad
+          condarc: |
+            channels:
+              - conda-forge
+          create-args: >-
+            freecad=${{ matrix.freecad }}
+            pytest
+
+      - name: Run tests under FreeCAD's Python
+        shell: bash -el {0}
+        run: |
+          # The pipeline tests skip without an importable FreeCAD; make sure
+          # they actually ran (directly, or via FreeCADCmd as a fallback).
+          if python -c "import FreeCAD" 2>/dev/null; then
+            python -m pytest -v
+          else
+            rm -f pytest_exit.txt
+            freecadcmd tests/run_headless.py
+            grep -q '^0$' pytest_exit.txt
+          fi
+
+      - name: Install addon into the user Mod directory
+        shell: bash -el {0}
+        run: |
+          MOD_DIR="$(freecadcmd .github/scripts/print_mod_dir.py | sed -n 's/^LAPIDARY_MOD_DIR=//p')"
+          test -n "$MOD_DIR"
+          echo "Mod directory: $MOD_DIR"
+          mkdir -p "$MOD_DIR"
+          rsync -a --exclude .git ./ "$MOD_DIR/Lapidary/"
+          echo "MOD_DIR=$MOD_DIR" >> "$GITHUB_ENV"
+
+      - name: Verify import and workbench metadata under FreeCADCmd
+        shell: bash -el {0}
+        run: |
+          freecadcmd "$MOD_DIR/Lapidary/.github/scripts/verify_install.py" | tee verify.log
+          grep -q LAPIDARY_VERIFY_OK verify.log

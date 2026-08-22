@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — rough stock icon -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#6e2c00" stroke-width="2" stroke-linejoin="round" fill="#e59866">
+    <polygon points="14,24 26,10 46,12 54,28 48,48 24,52 10,40"/>
+    <polyline points="14,24 30,30 48,48" fill="none"/>
+    <polyline points="26,10 30,30 54,28" fill="none"/>
+    <polyline points="10,40 30,30" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_OpticsStudyStale:
+     the optics-study icon greyed out with a warning triangle: stored results
+     no longer match the geometry (stale study). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#7f8c8d" stroke-width="2.2" stroke-linejoin="round" fill="#d5dbdb">
+    <polygon points="10,28 18,16 46,16 54,28 32,54"/>
+    <polyline points="10,28 54,28" fill="none"/>
+  </g>
+  <g stroke="#95a5a6" stroke-width="2.4" stroke-linecap="round" fill="none">
+    <polyline points="20,4 27,20 24,40 40,42 46,8"/>
+  </g>
+  <!-- stale marker -->
+  <g stroke="#922b21" stroke-width="2" stroke-linejoin="round" fill="#f5b7b1">
+    <polygon points="46,36 62,62 30,62"/>
+  </g>
+  <g stroke="#922b21" stroke-width="3" stroke-linecap="round">
+    <line x1="46" y1="44" x2="46" y2="53"/>
+    <line x1="46" y1="57.5" x2="46" y2="58"/>
+  </g>
+</svg>

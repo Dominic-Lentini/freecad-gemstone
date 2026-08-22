@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_OpticsStudy: the
+     stone in profile with a light ray entering the crown and returning after
+     a pavilion bounce (a ray-trace study). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#1a5276" stroke-width="2.2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="10,28 18,16 46,16 54,28 32,54"/>
+    <polyline points="10,28 54,28" fill="none"/>
+  </g>
+  <!-- the traced ray: in through the crown, bounce at the pavilion, out -->
+  <g stroke="#b9770e" stroke-width="2.4" stroke-linecap="round" fill="none">
+    <polyline points="20,4 27,20 24,40 40,42 46,8"/>
+  </g>
+  <g fill="#b9770e" stroke="none">
+    <polygon points="27,20 22,12 29,13"/>
+    <polygon points="46,8 41,15 48,16"/>
+  </g>
+</svg>

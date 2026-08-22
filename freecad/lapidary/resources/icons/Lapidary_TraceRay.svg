@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: LGPL-2.1-or-later — Lapidary_TraceRay: a cursor
+     picking the crown and the picked ray bouncing through the pavilion and
+     escaping: the interactive single-ray path visual. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g stroke="#1a5276" stroke-width="2.2" stroke-linejoin="round" fill="#aed6f1">
+    <polygon points="8,26 16,14 48,14 56,26 32,56"/>
+    <polyline points="8,26 56,26" fill="none"/>
+  </g>
+  <!-- the picked ray: down, two pavilion bounces, escape up-right -->
+  <g stroke="#b9770e" stroke-width="2.6" stroke-linecap="round" fill="none">
+    <polyline points="26,2 26,20 18,42 40,46 50,18"/>
+  </g>
+  <g fill="#b9770e" stroke="none">
+    <polygon points="50,18 43,22 49,27"/>
+  </g>
+  <!-- pick cursor -->
+  <g stroke="#196f3d" stroke-width="2" stroke-linecap="round">
+    <line x1="26" y1="14" x2="26" y2="26"/>
+    <line x1="20" y1="20" x2="32" y2="20"/>
+  </g>
+</svg>
