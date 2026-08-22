@@ -68,15 +68,15 @@ jobs:
       - name: Install addon into the user Mod directory
         shell: bash -el {0}
         run: |
-          MOD_DIR="$(freecadcmd .github/scripts/print_mod_dir.py | sed -n 's/^gemstone_MOD_DIR=//p')"
+          MOD_DIR="$(freecadcmd .github/scripts/print_mod_dir.py | sed -n 's/^GEMSTONE_MOD_DIR=//p')"
           test -n "$MOD_DIR"
           echo "Mod directory: $MOD_DIR"
           mkdir -p "$MOD_DIR"
-          rsync -a --exclude .git ./ "$MOD_DIR/gemstone/"
+          rsync -a --exclude .git ./ "$MOD_DIR/GEMSTONE/"
           echo "MOD_DIR=$MOD_DIR" >> "$GITHUB_ENV"
 
       - name: Verify import and workbench metadata under FreeCADCmd
         shell: bash -el {0}
         run: |
-          freecadcmd "$MOD_DIR/gemstone/.github/scripts/verify_install.py" | tee verify.log
-          grep -q gemstone_VERIFY_OK verify.log
+          freecadcmd "$MOD_DIR/GEMSTONE/.github/scripts/verify_install.py" | tee verify.log
+          grep -q GEMSTONE_VERIFY_OK verify.log
