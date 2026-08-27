@@ -20,11 +20,11 @@
        Addon Manager reports it rather than infers it. -->
   <depend type="python">numpy</depend>
 
-  <url type="repository" branch="main">https://github.com/Dominic-Lentini/freecad-lapidary</url>
-  <url type="bugtracker">https://github.com/Dominic-Lentini/freecad-lapidary/issues</url>
+  <url type="repository" branch="main">https://github.com/Dominic-Lentini/freecad-gemstone</url>
+  <url type="bugtracker">https://github.com/Dominic-Lentini/freecad-gemstone/issues</url>
   <!-- readme must be a raw Markdown link: the Addon Manager renders it. -->
-  <url type="readme">https://github.com/Dominic-Lentini/freecad-lapidary/raw/main/README.md</url>
-  <url type="documentation">https://github.com/Dominic-Lentini/freecad-lapidary/blob/main/README.md</url>
+  <url type="readme">https://github.com/Dominic-Lentini/freecad-gemstone/raw/main/README.md</url>
+  <url type="documentation">https://github.com/Dominic-Lentini/freecad-gemstone/blob/main/README.md</url>
   <icon>freecad/lapidary/resources/icons/Lapidary_Workbench.svg</icon>
 
   <content>
